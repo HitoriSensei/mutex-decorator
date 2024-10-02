@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "coverage": "jest --coverage",
+    "test": "jest",
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "npm run build && npm run test"
   },
