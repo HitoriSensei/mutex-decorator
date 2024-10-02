@@ -6,6 +6,18 @@ Under the hood, the library uses [composable-locks](https://www.npmjs.com/packag
 
 In contrast to `composable-locks`, the `ReentrantMutex` decorator doesn't depend on domain symbols use and instead uses `AsyncLocalStorage` to keep the recursive lock state.
 
+---
+**NOTE**: This library is intended to be used by TypeScript projects. \
+Projects must have the `experimentalDecorators` option enabled in the `tsconfig.json` file.
+
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+  }
+}
+```
+
 ## Installation
 
 Install the library using npm:
