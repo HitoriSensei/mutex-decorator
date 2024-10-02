@@ -1,0 +1,11 @@
+src
+coverage
+.idea
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc
+jest.config.js
+tsconfig.build.json
+tsconfig.json

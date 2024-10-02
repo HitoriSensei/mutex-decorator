@@ -1,0 +1,40 @@
+{
+  "name": "@hitorisensei/mutex-decorator",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "coverage": "jest --coverage",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "mutex",
+    "decorator"
+  ],
+  "author": "Piotr Bosak <hitori@duck.com>",
+  "license": "MIT",
+  "description": "Mutex and Re-entrant Mutex Decorators for TypeScript",
+  "dependencies": {
+    "composable-locks": "^0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HitoriSensei/mutex-decorator"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "typescript": "^5.6.2",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^3.3.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}
